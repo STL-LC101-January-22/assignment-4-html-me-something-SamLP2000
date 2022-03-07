@@ -9,6 +9,9 @@ h3 {
 #fourthHeader {
   white-space: wrap;
 }
+#finalHeader {
+  white-space: wrap;
+}
 #mainHeading {
   color: red;
   background-color: lightgrey;
