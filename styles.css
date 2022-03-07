@@ -1,1 +1,88 @@
 /* Write your CSS here! */
+body {
+  margin: 8px;
+  display: block;
+}
+h3 {
+  white-space: nowrap;
+}
+#fourthHeader {
+  white-space: wrap;
+}
+#mainHeading {
+  color: red;
+  background-color: lightgrey;
+  background-size: contain;
+  font-family: monospace;
+}
+#Header {
+  text-align: center;
+  background-color: lightgrey;
+  border-style: solid;
+  border-color: black;
+  border-bottom: none;
+}
+.funParagraph {
+  background-color: lightgrey;
+  text-align: center;
+  line-height: 1.6em;
+  white-space: wrap;
+  font-size: 16px;
+  margin: auto;
+  display: block;
+  justify-content: center;
+  max-width: fit-content;
+  color: green;
+}
+#mainArticles {
+  background-color: darkgrey;
+  text-align: center;
+  border-style: solid;
+  border-color: black;
+  border-top-width: 1px;
+  border-bottom: none;
+}
+.Choices {
+  border-style: solid;
+  box-sizing: border-box;
+}
+#listParagraph {
+  line-height: 1.2em;
+  margin-left: auto;
+  margin-right: auto;
+  display: table;
+  font-size: large;
+}
+ul {
+  padding-left: 6%;
+  text-align: left;
+  line-height: 1.4em;
+  list-style-type: decimal;
+  margin-left: auto;
+  margin-right: auto;
+  display: table;
+  font-size: large;
+}
+.entryContainer {
+  margin-left: auto;
+  margin-right: auto;
+  display: table;
+  width: 10%;
+}
+#primary-footer {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: monospace;
+  background-color: saddlebrown;
+  border-style: solid;
+  border-color: black;
+  border-top-width: 1px;
+  padding-top: 10px;
+  font-size: 16px;
+  width: auto;
+}
+.Submit {
+  margin-top: 2%;
+  box-shadow: 2px 3px black;
+}
