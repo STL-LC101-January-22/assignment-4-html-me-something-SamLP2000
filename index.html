@@ -1,8 +1,152 @@
 <!DOCTYPE html>
+
 <html>
-   <head>
-   </head>
-   <body>
-      <!-- Write your HTML in this file! -->
-   </body>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, intia-scale=1 target-densityDpi=device-dpi, user-scalable=yes"
+      charset="utf-8"
+    />
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <script type="text/javascript" src="js/form-func.js"></script>
+    <title>Sam Perez Assignment</title>
+  </head>
+
+  <body>
+    <header id="Header">
+      <h1 id="mainHeading">What will this picture be?</h1>
+      <p id="testP" class="funParagraph">
+        Here's a fun game to kill some time over! The idea is simple (has to be
+        as i just made it up). <br />
+        You must correctly guess which picture is hidden under the images shown
+        on the page. <br />
+        Hints <strong>WILL BE PROVIDED</strong>!
+      </p>
+    </header>
+    <main id="mainArticles">
+      <p id="listParagraph">Let's start by listing two basic rules.</p>
+      <ul>
+        <li>Don't look at the source of this page (I.E cheating).</li>
+        <li>Have fun!</li>
+      </ul>
+      <article class="entryContainer">
+        <form onsubmit="formMethod1(); return false;">
+          <h3>Here is our first entry:</h3>
+          <a href="./images/linus.jpg" target="_blank">
+            <img
+              src="./images/fin.jpg"
+              alt="You should not be seeing this text."
+              width=""
+              height="300"
+            />
+          </a>
+          <h3>Hint: Who created git? (Choose his or her first name)</h3>
+          <select id="firstChoice" class="Choices">
+            <option value="Mike">Mike</option>
+            <option value="Linus">Linus</option>
+            <option value="Steve">Steve</option>
+            <option value="Dona">Dona</option>
+          </select>
+          <br />
+          <input id="Submit1" class="Submit" type="submit" value="Submit" />
+        </form>
+      </article>
+      <article class="entryContainer">
+        <form onsubmit="formMethod2(); return false;">
+          <h3>Here is our second entry:</h3>
+          <a href="./images/tux.png" target="_blank">
+            <img
+              src="./images/waterfall.jpeg"
+              alt="You should not be seeing this text."
+              width=""
+              height="300"
+            />
+          </a>
+          <h3>Hint: Which animal is NOT a mammal?</h3>
+          <select id="secondChoice" class="Choices">
+            <option value="Dolphin">Dolphin</option>
+            <option value="Platypus">Platypus</option>
+            <option value="Penguin">Penguin</option>
+            <option value="Bat">Bat</option>
+          </select>
+          <br />
+          <input id="Submit2" class="Submit" type="submit" value="Submit" />
+        </form>
+      </article>
+      <article class="entryContainer">
+        <form onsubmit="formMethod3(); return false;">
+          <h3>Here is our third entry:</h3>
+          <a href="./images/gentoo-logo.png" target="_blank">
+            <img
+              src="./images/birds-nest.jpg"
+              alt="You should not be seeing this text."
+              width=""
+              height="300"
+            />
+          </a>
+          <h3>Hint: What linux "distro" is ChromeOS based off of?</h3>
+          <select id="thirdChoice" class="Choices">
+            <option value="Debian/Ubuntu">Debian/Ubuntu</option>
+            <option value="Gentoo">Gentoo</option>
+            <option value="Fedora/SUSE/CentOS">Fedora/SUSE/CentOS</option>
+            <option value="Arch">Arch</option>
+          </select>
+          <br />
+          <input id="Submit3" class="Submit" type="submit" value="Submit" />
+        </form>
+      </article>
+      <article class="entryContainer">
+        <form onsubmit="formMethod4(); return false;">
+          <h3 id="fourthHeader">Here is our fourth entry:</h3>
+          <a href="./images/bsd.png" target="_blank">
+            <img
+              src="./images/safari.jpg"
+              alt="You should not be seeing this text."
+              width=""
+              height="300"
+            />
+          </a>
+          <h3>
+            Hint: What is considered the "other" family of free UNIX-like OS's?
+          </h3>
+          <select id="fourthChoice" class="Choices">
+            <option value="DOS">DOS</option>
+            <option value="Solaris">Solaris</option>
+            <option value="BSD">BSD</option>
+            <option value="NeXTSTEP">NeXTSTEP</option>
+          </select>
+          <br />
+          <input id="Submit4" class="Submit" type="submit" value="Submit" />
+        </form>
+      </article>
+      <article class="entryContainer">
+        <form onsubmit="formMethod5(); return false;">
+          <h3 id="finalHeader">Here is our final entry:</h3>
+          <a href="./images/emacs-vim.jpg" target="_blank">
+            <img
+              src="./images/kangaroos.jpg"
+              alt="You should not be seeing this text."
+              width=""
+              height="300"
+            />
+          </a>
+          <h3>
+            Hint: Which are the two editors known for the "Editor Wars" fought
+            between them?
+          </h3>
+          <select id="finalChoice" class="Choices">
+            <option value="Sed/Awk">Sed/Awk</option>
+            <option value="Emacs/Vim">Emacs/Vim</option>
+            <option value="Pico/Nano">Pico/Nano</option>
+            <option value="Vscode/Atom">Vscode/Atom</option>
+          </select>
+          <br />
+          <input id="Submit5" class="Submit" type="submit" value="Submit" />
+        </form>
+      </article>
+    </main>
+    <footer id="primary-footer">
+      <p>This is NOT a copyrighted document (&copy;), Enjoy.</p>
+    </footer>
+  </body>
 </html>
